@@ -10,13 +10,14 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <db.url>jdbc:postgresql://127.0.0.1:5432/tracker</db.url>
         <db.username>postgres</db.username>
         <db.password>password</db.password>
         <db.driver>org.postgresql.Driver</db.driver>
+        <hibernate-core.version>5.4.15.Final</hibernate-core.version>
     </properties>
 
     <dependencies>
@@ -38,6 +39,13 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.18</version>
+        </dependency>
+
+        <!-- HIBERNATE-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate-core.version}</version>
         </dependency>
     </dependencies>
 
