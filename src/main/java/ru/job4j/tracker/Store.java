@@ -8,5 +8,5 @@ public interface Store extends AutoCloseable {
     boolean delete(String id);
     List<Item> findAll();
     List<Item> findByName(String key);
-    Item findById(String id);
+    Item findById(int id);
 }

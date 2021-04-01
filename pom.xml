@@ -19,6 +19,7 @@
         <db.driver>org.postgresql.Driver</db.driver>
         <hibernate-core.version>5.4.15.Final</hibernate-core.version>
         <lombok-version>1.18.16</lombok-version>
+        <hsqldb.version>2.5.1</hsqldb.version>
     </properties>
 
     <dependencies>
@@ -55,6 +56,14 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate-core.version}</version>
+        </dependency>
+
+        <!-- HSQLDB -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>${hsqldb.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
