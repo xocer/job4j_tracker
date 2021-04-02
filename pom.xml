@@ -17,9 +17,12 @@
         <db.username>postgres</db.username>
         <db.password>password</db.password>
         <db.driver>org.postgresql.Driver</db.driver>
-        <hibernate-core.version>5.4.15.Final</hibernate-core.version>
-        <lombok-version>1.18.16</lombok-version>
+        <hibernate-core.version>6.0.0.Alpha7</hibernate-core.version>
+        <lombok-version>1.18.20</lombok-version>
         <hsqldb.version>2.5.1</hsqldb.version>
+        <spring-core.version>5.3.5</spring-core.version>
+        <spring-beans.version>5.3.5</spring-beans.version>
+        <spring-context.version>5.3.5</spring-context.version>
     </properties>
 
     <dependencies>
@@ -64,6 +67,24 @@
             <artifactId>hsqldb</artifactId>
             <version>${hsqldb.version}</version>
             <scope>test</scope>
+        </dependency>
+        <!-- SPRING -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring-beans.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring-context.version}</version>
         </dependency>
     </dependencies>
 
